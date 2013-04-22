@@ -1,0 +1,11 @@
+---
+# Common playbook
+
+- hosts: deluge
+  user: root
+  vars_files:
+    - vars/main.yml
+  tasks:
+    - include: tasks/main.yml
+  handlers:
+    - include: handlers/main.yml
