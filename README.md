@@ -7,7 +7,7 @@ Only tested with ubuntu server 12.04.
 
 Edit vars/main.yml and change any variables if needed. The default variables should work fine.
 
-Login to the webui: http://<server>:8112
+Login to the webui: http://{server-ip}:8112
 
 Default webui password: deluge
 
