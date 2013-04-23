@@ -19,4 +19,4 @@ In web-ui, click Preferences > Interface, then check 'Use SSL (paths relative to
 
 Add any users you wish to be able to easily manage or access files downloaded through Deluge to the group deluge will run as, for example:
 
-sudo adduser <username> deluge
+sudo adduser {username} deluge
