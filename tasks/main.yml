@@ -6,7 +6,6 @@
 
 - name: install python tools
   action: apt pkg=python-software-properties state=installed
-  user: system=yes shell=/bin/sh
 
 - name: Add deluge ppa key
   action: apt_repository repo=ppa:deluge-team/ppa state=present
