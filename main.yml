@@ -3,6 +3,7 @@
 
 - hosts: deluge
   user: root
+  sudo: True
   vars_files:
     - vars/main.yml
   tasks:
