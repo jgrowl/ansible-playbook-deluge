@@ -4,6 +4,10 @@
   user: state=present name=$delugeUser system=yes shell=/bin/sh comment="Deluge Torrents"
   when_boolean: $createDelugeUser
 
+- name: install python tools
+  action: apt pkg=python-software-properties state=installed
+  user: system=yes shell=/bin/sh
+
 - name: Add deluge ppa key
   action: apt_repository repo=ppa:deluge-team/ppa state=present
   notify: update apt-cache
